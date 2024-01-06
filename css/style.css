@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+}
+h4{
+    font-size: 22px;
+    font-weight: 800;
+    
+}
+.hero{
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(30deg,rgb(29, 28, 28),rgb(173, 159, 159));
+    position: relative;
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue; 
+    padding: 10px 60px;
+    margin: auto;
+    background-color: rgb(134, 132, 132);
+    border-bottom: 1px rgb(209, 206, 206) solid;
+}
+
+.logo{
+    font-size: 36px;
+    font-weight: 900;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo::first-letter{
+    border-left: 5px skyblue solid;
+    border-top: 5px skyblue solid;
+    border-bottom: 5px skyblue solid;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+
+}
+nav ul li a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: whitesmoke;
+   transition: .1s ease;
+
+}
+
+nav ul li a:hover{
+    color:rgb(55, 205, 224)
+   }
+
+.cv {
+    
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1.5px solid whitesmoke;
+    border-radius: 15px;
+    font-size:18px;
+    background-color:  skyblue;
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+ .cv:hover{
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    padding: 6px 15px;
+    border-radius: 15px;
+    color: whitesmoke;
+ }
+
+
+ .intro{
+    color: whitesmoke;
+    margin-top: 15%;
+    margin-left: 15%;
+ }
+
+ .images{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    
+ }
+ .images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-60%);
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+
+ /*    About Section start here*/
+
+ .about
+    {
+        width: 100%;
+        height:100vh;
+        background: linear-gradient(15deg,rgb(63, 62, 62),rgb(173, 159, 159));
+        
+    }
+.about h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about h3::after{
+    content:'';
+    height:2px;
+    width:50%;
+    background: #e40404;
+    position:absolute;
+    right:0;
+    top: 55px;
+    }
+    .about_info{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .about_image{
+        height: 70vh;
+        width: 30vw;
+        background-image: url("/images/about.jpg");
+        background-position: center;
+        background-size: cover;
+        transform: scaleX(-1);
+        border-radius: 15px;
+     }
+     .about_text{
+        height: 70vh;
+        width: 50vw;
+        color: lightyellow;
+        font-size: 400;
+        margin-top: 20px;
+     }
+     .personal_info{
+        padding-top: 20px;
+     }
+
+     .personal_info li{
+        display: block;
+        list-style: none;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+     }
